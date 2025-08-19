@@ -1,2 +1,2 @@
 # observaBackend
-Backend para el sitio web de Observa
+Backend para plataforma de proyecto Observa
