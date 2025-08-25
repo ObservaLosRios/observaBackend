@@ -10,7 +10,8 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://observa2037.netlify.app'
+  'https://observalosrios.netlify.app',
+  'https://observalosrios.cl'
 ];
 app.use(cors({
   origin: function(origin, callback) {
