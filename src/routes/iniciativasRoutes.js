@@ -36,7 +36,7 @@ routes.get('/iniciativa_historica/:planId', async (req, res) => {
     try {
         const db = await connectDb();
         const { planId } = req.params;
-        const result = await db.query('SELECT * FROM iniciativa_historica WHERE plan_id = $1', [planId]);
+        const result = await db.query('SELECT * FROM iniciativa_historica WHERE plan_id = $1 order by anio desc', [planId]);
 
         if (result.rows.length === 0) {
             return res.status(404).json({ message: 'No se encontraron iniciativas para este plan' });

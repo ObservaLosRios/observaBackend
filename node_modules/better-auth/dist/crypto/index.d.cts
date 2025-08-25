@@ -27,4 +27,5 @@ type SymmetricDecryptOptions = {
 };
 declare const symmetricDecrypt: ({ key, data, }: SymmetricDecryptOptions) => Promise<string>;
 
-export { type SymmetricDecryptOptions, type SymmetricEncryptOptions, compareHash, constantTimeEqual, generateRandomString, hashPassword, hashToBase64, signJWT, symmetricDecrypt, symmetricEncrypt, verifyPassword };
+export { compareHash, constantTimeEqual, generateRandomString, hashPassword, hashToBase64, signJWT, symmetricDecrypt, symmetricEncrypt, verifyPassword };
+export type { SymmetricDecryptOptions, SymmetricEncryptOptions };
